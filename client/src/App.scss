@@ -1,0 +1,12 @@
+@import "./styles/reset.scss";
+
+.desktop {
+  background-image: url("./img/test-bg.jpg");
+  background-repeat: repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  color: black;
+}
