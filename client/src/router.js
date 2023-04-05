@@ -4,7 +4,12 @@ import App from "./App";
 import ErrorPage from "./views/ErrorPage"; 
 
 import Main from "./views/Main"; 
+import Public from "./components/Public";
 import Login from "./views/Login";
+import Register from "./views/Register";
+
+import Private from "./components/Private";
+import Landing from "./views/Landing";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +26,15 @@ const router = createBrowserRouter([
           },
           {
             path: "/login",
-            element: <Login />,
+            element: <Public Component={Login} />,
+          },
+          {
+            path: "/register",
+            element: <Public Component={Register} />,
+          },
+          {
+            path: "/landing",
+            element: <Private Component={Landing} />,
           },
         ]
       }
