@@ -1,12 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 @import "./styles/reset.scss";
+@import "./styles/vars.scss";
 
-.desktop {
-  background-image: url("./img/test-bg.jpg");
-  background-repeat: repeat;
-  height: 100vh;
-  width: 100vw;
-}
-
-h1 {
-  color: black;
-}
+@import "./styles/desktop.scss";
+@import "./styles/navbar.scss";
+@import "./styles/button.scss";
+@import "./styles/form.scss";

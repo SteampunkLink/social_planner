@@ -1,0 +1,22 @@
+
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 0px 8px;
+  text-transform: uppercase;
+  transition: .5s;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-default {
+  background: $default-accent;
+  color: $default-text-accent;
+}
+
+.btn-hover-default:hover {
+  background: $default-text-color;
+  color: $default-bg;
+}

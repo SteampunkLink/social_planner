@@ -1,0 +1,45 @@
+.navbar {
+  background: black;
+  color: $default-text-color;
+  height: 50px;
+  .inner-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    h2 {
+      margin: 5px 15px;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      margin: 0 20px;
+      padding: 0;
+      li {
+        color: $default-text-color;
+        font-size: 1.2em;
+        height: 50px;
+        line-height: 50px;
+        list-style: none;
+        margin-left: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: .5s;
+        &:hover {
+          color: $default-text-accent;
+          cursor: pointer;
+        }
+        button {
+          height: 30px;
+          line-height: 30px;
+        }
+        a, svg {
+          display: inline;
+          padding-top: 8px;
+        }
+      }
+    }
+  }
+}
