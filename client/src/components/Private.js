@@ -15,7 +15,6 @@ const Private = ({ Component }) => {
   return (
     <div>
       <Component user={user} />
-      This is private. You shouldn't be seeing this if you aren't logged in.
     </div>
   )
 }

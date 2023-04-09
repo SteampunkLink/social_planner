@@ -15,7 +15,6 @@ const Public = ({ Component }) => {
   return (
     <div>
       <Component />
-      This is public. You shouldn't be seeing this if you are logged in.
     </div>
   )
 }

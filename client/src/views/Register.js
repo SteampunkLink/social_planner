@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import TextField from "../components/TextField";
 import { register } from "../redux/auth/authSlice";
+import Button from '../components/Button';
 
 const Register = () => {
   const dispatch = useDispatch();
@@ -14,13 +15,12 @@ const Register = () => {
   }
   return (
     <div>
-      <h1>Register</h1>
-      <h2><Link to="/login">Login instead</Link></h2>
+      <h1>Register  <small><Link className="link" to="/login">Login instead</Link></small></h1>
       <form method="post" onSubmit={registerUser}>
         <TextField name="name" aria="Name" placeholder="Name" />
         <TextField name="email" aria="Email" placeholder="Email" />
         <TextField type="password" name="password" aria="Password" placeholder="Password" />
-        <button type="submit">Login</button>
+        <Button isSubmit={true} text="Register" />
       </form>
     </div>
   )

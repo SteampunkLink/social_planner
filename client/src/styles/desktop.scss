@@ -1,0 +1,22 @@
+* {
+  font-family: $default-font;
+}
+
+.desktop {
+  background: $default-bg;
+  color: $default-text-color;
+  height: 100vh;
+  text-align: center;
+  width: 100vw;
+}
+
+h1 small {
+  font-size: 0.5em;
+}
+
+.link {
+  transition: .5s;
+  &:hover {
+    color: $default-text-accent;
+  }
+}
